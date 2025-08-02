@@ -13,7 +13,7 @@ A basic todo app with AI task suggestions.
 ### Requirements
 
 * Node.js
-* Python
+* Python (FastAPI)
 * Google Gemini API key
 
 ### Install
@@ -52,3 +52,4 @@ npm start
 * **Clear all:** Click "Clear All"
 
 ---
+

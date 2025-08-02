@@ -16,18 +16,6 @@ A basic todo app with AI task suggestions.
 * Python (FastAPI)
 * Google Gemini API key
 
-### Install
-
-```bash
-# Backend setup
-cd backend
-pip install -r requirements.txt
-
-# Frontend setup
-cd frontend
-npm install
-```
-
 ### Add API Key
 
 Edit `backend/main.py` and paste your Gemini API key in `GOOGLE_API_KEY = ""`.
@@ -37,10 +25,12 @@ Edit `backend/main.py` and paste your Gemini API key in `GOOGLE_API_KEY = ""`.
 ```bash
 # Start backend
 cd backend
+pip install -r requirements.txt
 python main.py
 
 # Start frontend
 cd frontend
+npm install
 npm start
 ```
 
@@ -52,4 +42,3 @@ npm start
 * **Clear all:** Click "Clear All"
 
 ---
-

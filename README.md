@@ -1,117 +1,54 @@
-# My Todo App
+# AI Todo App
 
-A simple todo app that uses AI to help you make task lists.
+A basic todo app with AI task suggestions.
 
-## What it does
+## Features
 
-- Add your own tasks
-- Get AI suggestions for tasks
-- Delete tasks
-- Clear all tasks
-- Save tasks to your computer
+* Add tasks
+* Get AI task ideas
+* Delete or clear tasks
 
 ## Setup
 
-### What you need
-- Node.js (version 14 or higher)
-- Python (version 3.8 or higher)
-- Google Gemini API key
+### Requirements
+
+* Node.js
+* Python
+* Google Gemini API key
 
 ### Install
 
-1. **Backend setup**
-   ```bash
-   cd backend
-   pip install -r requirements.txt
-   ```
+```bash
+# Backend setup
+cd backend
+pip install -r requirements.txt
 
-2. **Frontend setup**
-   ```bash
-   cd frontend
-   npm install
-   ```
-
-3. **Add API key**
-   - Open `backend/main.py`
-   - Find the line with `GOOGLE_API_KEY`
-   - Replace it with your own key
-
-### Run the app
-
-1. **Start backend**
-   ```bash
-   cd backend
-   python main.py
-   ```
-
-2. **Start frontend**
-   ```bash
-   cd frontend
-   npm start
-   ```
-
-## How to use
-
-### Add tasks manually
-1. Type your task in the "Add Your Own" box
-2. Click "Add" button
-
-### Get AI help
-1. Type what you want to do in "Get AI Help" box
-2. Click "Get Ideas" button
-3. AI will give you 3-5 task suggestions
-
-### Delete tasks
-- Click the "×" button next to any task to delete it
-- Click "Clear All" to delete all tasks
-
-## API
-
-- `GET /todos` - Get all todos
-- `POST /todos` - Add a new todo
-- `PUT /todos/{id}` - Update a todo
-- `DELETE /todos/{id}` - Delete a todo
-- `DELETE /todos` - Delete all todos
-- `POST /generate` - Get AI suggestions
-
-## Files
-
-```
-AI-TODO/
-├── frontend/          # React app
-│   ├── src/
-│   │   ├── App.js    # Main app
-│   │   ├── App.css   # Styles
-│   │   └── index.js  # Start file
-│   └── package.json
-├── backend/           # Python server
-│   ├── main.py       # Server code
-│   ├── requirements.txt
-│   └── todos.json    # Data file
-└── README.md
+# Frontend setup
+cd frontend
+npm install
 ```
 
-## Notes
+### Add API Key
 
-- Tasks are saved in `backend/todos.json`
-- AI gives you 3-5 simple tasks
-- Works on phone and computer
+Edit `backend/main.py` and paste your Gemini API key in `GOOGLE_API_KEY = ""`.
 
-## Problems
+## Run the App
 
-**Backend won't start**
-- Make sure you ran `pip install -r requirements.txt`
-- Check if port 8000 is free
+```bash
+# Start backend
+cd backend
+python main.py
 
-**Frontend won't connect**
-- Make sure backend is running
-- Check browser console for errors
+# Start frontend
+cd frontend
+npm start
+```
 
-**AI not working**
-- Check your API key is right
-- Make sure you have internet
-- Check you have API credits
+## Usage
 
-## License
+* **Add task:** Type and click "Add"
+* **AI ideas:** Type and click "Get Ideas"
+* **Delete task:** Click `×`
+* **Clear all:** Click "Clear All"
 
-MIT License 
+---
